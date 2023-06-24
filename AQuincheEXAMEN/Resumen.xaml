@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AQuincheEXAMEN.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" FontSize="16" HorizontalTextAlignment="End" TextColor="Red"/>
+            <Label Text="RESUMEN" HorizontalTextAlignment="Center" FontSize="24" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombreestudiante" Placeholder="Nombre del estudiante" TextChanged="txtNombreestudiante_TextChanged" Grid.Row="0" Grid.Column="2"/>
+                <Label Text="Aellido" FontSize="20" Grid.Row="1" Grid.Column="2"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido del estudiante" TextChanged="txtApellido_TextChanged" Grid.Row="1" Grid.Column="2"/>
+                <Label Text="Edad" FontSize="20" Grid.Row="1" Grid.Column="2"/>
+                <Entry x:Name="txtedad" Placeholder="Edad del estudiante" TextChanged="txtedad_TextChanged" Grid.Row="2" Grid.Column="2"/>
+                <Label Text="fecha" FontSize="20" Grid.Row="2" Grid.Column="2"/>
+                <Entry x:Name="txtFecha" Placeholder="fecha" TextChanged="txtApellido_TextChanged" Grid.Row="2" Grid.Column="2"/>
+                <Label Text="Pais" FontSize="20" Grid.Row="3" Grid.Column="2"/>
+                <Entry x:Name="txtPais" Placeholder="Apellido del estudiante" TextChanged="txtPais_TextChanged" Grid.Row="3" Grid.Column="2"/>
+                <Label Text="Cuidad" FontSize="20" Grid.Row="4" Grid.Column="2"/>
+                <Entry x:Name="txtApelo" Placeholder="Apellido del estudiante" TextChanged="txtApellido_TextChanged_1" Grid.Row="47" Grid.Column="2"/>
+                <Label Text="Monto inicial" FontSize="20" Grid.Row="5" Grid.Column="2"/>
+                <Entry x:Name="txtinicial" Placeholder="Apellido del estudiante" TextChanged="txtinicial_TextChanged" Grid.Row="5" Grid.Column="2"/>
+
+            </Grid>
+            <Button x:Name="btnSalir" Text="SALIR" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

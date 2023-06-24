@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AQuincheEXAMEN.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuario" TextColor="red" FontSize="16" HorizontalTextAlignment="End"/>
+            <Label Text="REGISTRO" HorizontalTextAlignment="Center" FontSize="24" />
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="FECHA" FontSize="20" Grid.Row="0" Grid.Column="0"/>
+                <DatePicker  x:Name="datePicker"  DateSelected="datePicker_DateSelected"  Grid.Row="0" Grid.Column="2"/>
+                <Label Text="PAIS" FontSize="20" Grid.Row="1" Grid.Column="0"/>
+                <Picker x:Name="pkrPaises" Title="Paises"  Grid.Row="1" Grid.Column="2">
+                    <Picker.Items>
+                        <x:String>Colombia</x:String>
+                        <x:String>Ecuador</x:String>
+                        <x:String>Peru</x:String>
+                        <x:String>Argentina</x:String>
+                        <x:String>brasil</x:String>
+                        <x:String>Mexico</x:String>
+                    </Picker.Items>
+
+                </Picker>
+
+                <Label Text="CIUDAD" FontSize="20" Grid.Row="2" Grid.Column="0"/>
+                <Picker x:Name="Cuidad" Title="Ciudad"   Grid.Row="2" Grid.Column="2">
+                    <Picker.Items>
+                        <x:String>Cali</x:String>
+                        <x:String>Quito</x:String>
+                        <x:String>Lima</x:String>
+                        <x:String>Saudita</x:String>
+                        <x:String>Saopaolo</x:String>
+                        <x:String>Cretaro</x:String>
+                    </Picker.Items>
+
+                </Picker>
+                <Label Text="MONTO INICIAL" FontSize="20" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtDato" Placeholder="Ingrese un valor númerico" Keyboard="Numeric" TextChanged="txtDato_TextChanged" Grid.Row="3" Grid.Column="2"/>
+                <Label Text="PAGO MENSUAL" FontSize="20" Grid.Row="4" Grid.Column="0"/>
+                <Entry x:Name="txtDato2" Placeholder="Ingrese un valor númerico" Keyboard="Numeric" TextChanged="txtDato2_TextChanged" Grid.Row="4" Grid.Column="2"/>
+                <Label Text="NOMBRE" HorizontalTextAlignment="Center" FontSize="20"  Grid.Row="6" Grid.Column="0"/>
+                <Label Text="APELLIDO" HorizontalTextAlignment="Center" FontSize="20"  Grid.Row="6" Grid.Column="1" />
+                <Label Text="EDAD" HorizontalTextAlignment="Center" FontSize="20"  Grid.Row="6" Grid.Column="2" />
+                <Entry x:Name="txtNombre" Placeholder="Nombre" FontSize="20"  Grid.Row="7" Grid.Column="0"/>
+                <Entry x:Name="txtApellido" Placeholder="Apellido" FontSize="20" Grid.Row="7" Grid.Column="1"/>
+                <Entry x:Name="txtedad" Placeholder="Edad" FontSize="20" Grid.Row="7" Grid.Column="2"/>
+                <Button x:Name="btnPagomensual" Text="PAGO MENSUAL" Clicked="btnPagomensual_Clicked" Grid.Row="8" Grid.Column="0" WidthRequest="100" HeightRequest="200"/>
+                <Button x:Name="btnResumen" Text="RESUMEN" Clicked="btnResumen_Clicked" Grid.Row="8" Grid.Column="2"/>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
